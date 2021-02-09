@@ -4,20 +4,37 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-emotion",
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve(`${__dirname}/src/components/Layout.tsx`)
+        }
+      }
+    },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "261668927",
       },
     },
-    "gatsby-plugin-mdx",
+    // Pages
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/src/pages`,
       },
       __key: "pages",
+    },
+    // Posts
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
     },
     {
       resolve: `gatsby-plugin-typescript`,
