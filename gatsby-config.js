@@ -30,13 +30,6 @@ module.exports = {
     },
     // Posts
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "posts",
-        path: `${__dirname}/src/posts`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true, // defaults to false
