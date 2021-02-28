@@ -7,7 +7,21 @@ import "katex/dist/katex.min.css";
 const IndexPage = () => {
   return (
     <Layout>
+      <b>Start Here</b>
       <Link to="options">Options</Link>
+      <Link to="options">Greeks</Link>
+      <ul>
+        <li>
+          <b>
+            Strategies
+            <ul>
+              <li>
+                <Link to="options">Greeks</Link>
+              </li>
+            </ul>
+          </b>
+        </li>
+      </ul>
     </Layout>
   );
 };
