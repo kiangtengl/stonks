@@ -1,0 +1,120 @@
+# Options
+
+## Why?
+
+Options, like stocks, are instruments (not the musical kind) that can be bought on the market. They're slightly more complicated than stocks. They
+
+- Look like license plates [AAPL210305C00070000](https://finance.yahoo.com/quote/AAPL210305C00070000?p=AAPL210305C00070000)
+- Have strikes, premiums and expiry dates
+- Come in the form of puts or calls
+- Are one of the easiest ways to [lose all your money](https://www.reddit.com/r/wallstreetbetsOGs/comments/ltj1ie/gonna_run_this_account_to_the_ground_and_then/) in a short amount of time
+
+They're definitely dangerous, but it's still good to learn about them. Why? Because they allow you to make money in all market conditions, rather than just a <span>📈&nbsp;</span> bull market.
+
+> If stocks are a hammer, than options are a surgical knife that you can easily stab yourself with
+
+More importantly, they also allow you to customise how much you're willing to make/lose. Given the right set of options, you can achieve a portfolio that is safer than one just consisting of stocks.
+
+- If you buy 100 AAPL shares at $100, you will lose ($20 x 100) when AAPL goes to $80
+- If you had instead put a [collar](https://www.theoptionsguide.com/the-collar-strategy.aspx) on AAPL between $90 and $110, you would have only lost ($10 x100).
+  - The downside that is your gains are also capped at $110
+
+This is just an example of using options to make your portfolio safer, but you can obviously go the other way and risk all your money for a potentially 10x trade. Given the flexibility of options, I think that it's good for everyone to know about options, even if they don't trade them. After all, more knowledge can't hurt.
+
+So if you're even slightly convinced after reading this, do scroll down to learn more about how you can use options to customise your stock returns
+
+## Options as Bets
+
+Stocks are easy to understand, you can either buy or sell a stock. Stock goes up $\rightarrow$ you make money. Stock goes down $\rightarrow$ you lose money.
+
+Options are slightly different. They are bets on a stock's price over time. There are two types of options
+
+- Calls - bets that a stock goes above a certain price on a certain date
+- Puts - bets that a stock goes below a certain price on a ceratin date
+
+Because they are bets, they have a very different payoff ratio compared to stocks
+
+- **Stocks**: I buy AAPL at $110, AAPL goes to $120, I make money
+
+- **Options**: I bet that AAPL goes past $130. Even if AAPL goes to $129, I don't make money[^1] unless it goes past
+
+This example clearly shows why options are often considered gambling. After all, you're making bets
+
+[^1]: You can still recover some money if you end the bet early. We'll cover this later
+
+## Placing a bet
+
+While stock prices can be in increments of 1 cent (i.e. $101.01, $101.02), the exchanges usually only offers options at fixed intervals and at fixed dates. If you open your brokerage app, you'll see these terms used to describe options
+
+- **Underlying:** I think that **<Teal>AAPL</Teal>** ,
+- **Expiry:** On 2020 March 14 **<Blue>(2020/03/14)</Blue>**
+
+- **Type:** will go above (call option, **<Pink>C</Pink>**
+  )
+
+- **Strike**: **<Green>$70</Green>**
+
+For the above bet, it's ticker will look something like
+
+- **<Teal>AAPL</Teal><Blue>20200314</Blue><Pink>C</Pink><Green>0070</Green>**
+
+and it'll be available for a certain price (set by the market) That price is the **<Yellow>premium</Yellow>**.
+
+If you buy the option, you're effectively placing a bet and will be rewarded if the price is above <Green>$70</Green> on <Blue>2020/03/14</Blue>
+
+Similary, if you bought a **<Teal>AAPL</Teal><Blue>20200314</Blue><Pink>P</Pink><Green>0070</Green>** (P instead of C), you'll be rewarded if the price is below $70.
+
+## Risk vs Reward
+
+In sports betting, the payoff is less when you're more likely to win. For example, if you bet on the crowd favorite, you might only get odds of 1 : 5. This means you get only $1 per $5 bet. This also means that the person who took the other side of the bet gains $5 per $1 bet if the underdog won.
+
+In the world of options, premiums describe how likely the market thinks a bet will succeed
+
+- High chance -> high premium, you pay more for the bet
+- Low chance -> low premium, you pay less for the bet
+
+For example, if AAPL is at $100 on 5th Mar, the premium for next week's call option,
+
+- AAPL 12 March $110 C would be higher than a
+- AAPL 12 March $120 C
+
+because it is more likely that the $110 price will be hit. Re-using the sports analogy, the $110 is the crowd favorite.
+
+This concept of premium also affects the reward you get when buying an option. Let's assume
+
+- AAPL 12 March $110C costs $2
+- AAPL 12 March $120C costs $1
+
+If both bets paid off $10, you would make (10/2 = 5x) on the $110C while making (10/1 = 10x) on the $120C.
+
+This means that the less you pay for an option, the more (percentage wise) you make on your bet. Maybe that's why people bet on single numbers in roulette.
+
+tldr; The riskier the option, the less you pay and the more you make. People on WSB like YOLOing their life savings on risky bets with high payoffs. It's up to you to decide whether you want to do that too.
+
+## Basic Options Math
+
+At this point, you should have a better understanding of options and how they work. We can now go into the math on
+
+- How much we'll make
+
+**Call Options**
+
+A call option gives you right to buy 100 shares
+
+## Becoming the Bookie
+
+<WIP\>
+
+As with sports betting, you there are always two sides to every trade. If you ever thought that
+
+- <Link to="covered_calls">Covered Calls</Link>
+
+## Chickening Out
+
+- <Link to="covered_calls">Greeks</Link>
+
+<WIP\>
+
+## Legos
+
+You can combine options together

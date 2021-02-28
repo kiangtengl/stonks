@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: "stonks",
@@ -8,10 +10,15 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        remarkPlugins: [
+          require("remark-math"),
+          require("remark-html-katex"),
+          require("remark-slug"),
+        ],
         defaultLayouts: {
-          default: require.resolve(`${__dirname}/src/components/Layout.tsx`)
-        }
-      }
+          default: require.resolve(`${__dirname}/src/components/Layout.tsx`),
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-google-analytics",
