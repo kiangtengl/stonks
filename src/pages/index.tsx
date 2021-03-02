@@ -7,19 +7,19 @@ import "katex/dist/katex.min.css";
 const IndexPage = () => {
   return (
     <Layout>
-      <b>Start Here</b>
-      <Link to="options">Options</Link>
-      <Link to="options">Greeks</Link>
+      <h3>Start Here</h3>
       <ul>
         <li>
-          <b>
-            Strategies
-            <ul>
-              <li>
-                <Link to="options">Greeks</Link>
-              </li>
-            </ul>
-          </b>
+          <Link to="options">Options</Link>
+        </li>
+        <li>
+          <Link to="options">Greeks</Link>
+        </li>
+      </ul>
+      <h3>Strategies</h3>
+      <ul>
+        <li>
+          <Link to="covered_call">Covered Call</Link>
         </li>
       </ul>
     </Layout>

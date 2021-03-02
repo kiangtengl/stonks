@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import { MDXProvider } from "@mdx-js/react";
 import { graphql, Link } from "gatsby";
 import Helmet from "react-helmet";
-import TOC from "../components/TOC";
 
 const breakpoints = {
   desktop: `@media (min-width: ${576}px)`,
@@ -102,7 +101,6 @@ function Providers(props) {
         p: P,
         blockquote: Blockquote,
         Link,
-        TOC,
         Blue,
         Teal,
         Green,

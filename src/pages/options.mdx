@@ -93,13 +93,31 @@ tldr; The riskier the option, the less you pay and the more you make. People on 
 
 ## Basic Options Math
 
-At this point, you should have a better understanding of options and how they work. We can now go into the math on
-
-- How much we'll make
+Now that you've a basic conceptual understanding of how options work, we can go into the math. Let's start with calls
 
 **Call Options**
 
-A call option gives you right to buy 100 shares
+- A call option gives you the right to buy 100 shares of a stock at a given strike until it expires
+- For example, **<Teal>AAPL</Teal><Blue>20200314</Blue><Pink>P</Pink><Green>0070</Green>** allows you
+  - to buy 100 shares of AAPL at <Green>$70</Green>,
+  - expires on <Blue>2020/03/14</Blue>
+
+The "betting" part of a call option comes from the price of the stock. If the stock is above $70, you can redeem your option, buy the shares at $70 and sell it at the current price, giving you a profit.
+
+- For example if AAPL is at $80 today and you have the above call, you can redeem shares at $70 and sell it for ($80 - $70) for a $10 profit per share
+- Because each option is for 100 shares, the total profit is $1000
+
+Take note however that options aren't free. As mentioned earlier, they have a premium. This premium affects your actual profit.
+
+https://excalidraw.com/#json=5062427745976320,1pfXF1ipolcQ-UZSmeO-lw
+
+- For example, if you pay $10 for a <Teal>AAPL</Teal><Blue>20200314</Blue><Pink>P</Pink><Green>0070</Green>
+- Your profit needs to be at least $10 to cover the premium you paid
+- You only start making from a price difference >$10. In other words, your breakeven is $80
+
+**Put Options**
+
+Put options are similar to call options, except they give you the right to **sell** instead of **buy**
 
 ## Becoming the Bookie
 

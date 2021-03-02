@@ -10,6 +10,20 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-embedder",
+            options: {
+              customTransformers: [require("gatsby-embedder-excalidraw")],
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
         remarkPlugins: [
           require("remark-math"),
           require("remark-html-katex"),
