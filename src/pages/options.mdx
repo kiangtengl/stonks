@@ -98,7 +98,7 @@ Now that you've a basic conceptual understanding of how options work, we can go 
 **Call Options**
 
 - A call option gives you the right to buy 100 shares of a stock at a given strike until it expires
-- For example, **<Teal>AAPL</Teal><Blue>20200314</Blue><Pink>P</Pink><Green>0070</Green>** allows you
+- For example, **<Teal>AAPL</Teal><Blue>20200314</Blue><Pink>C</Pink><Green>0070</Green>** allows you
   - to buy 100 shares of AAPL at <Green>$70</Green>,
   - expires on <Blue>2020/03/14</Blue>
 
@@ -109,15 +109,32 @@ The "betting" part of a call option comes from the price of the stock. If the st
 
 Take note however that options aren't free. As mentioned earlier, they have a premium. This premium affects your actual profit.
 
-https://excalidraw.com/#json=5062427745976320,1pfXF1ipolcQ-UZSmeO-lw
+https://excalidraw.com/#json=5643618438086656,0DYP-lf9jIzoOUjayNG2wA
 
-- For example, if you pay $10 for a <Teal>AAPL</Teal><Blue>20200314</Blue><Pink>P</Pink><Green>0070</Green>
+- For example, if you pay $10 for a <Teal>AAPL</Teal><Blue>20200314</Blue><Pink>C</Pink><Green>0070</Green>
 - Your profit needs to be at least $10 to cover the premium you paid
 - You only start making from a price difference >$10. In other words, your breakeven is $80
+- As with all bets, the maximum amount that you're losing is the money you used to buy the contract, or the premium.
 
 **Put Options**
 
-Put options are similar to call options, except they give you the right to **sell** instead of **buy**
+Put options are similar to call options, except they give you the right to **sell** instead of **buy**.
+
+- For example, **<Teal>AAPL</Teal><Blue>20200314</Blue><Pink>P</Pink><Green>0070</Green>** allows you
+  - to sell 100 shares of AAPL at <Green>$70</Green>,
+  - expires on <Blue>2020/03/14</Blue>
+
+If the stock is below $70, you can redeem your option, buy them at the current price and sell them at $70 for a profit
+
+- For example if AAPL is at $50 today and you have the above put, you can buy the shares at $50 and sell them at $70 for a ($70 - $50 = $20) profit per share
+- Because each option is for 100 shares, the total profit is $1000
+
+https://excalidraw.com/#json=4735950907244544,JhyXLHsZLIS5Q-mGW8h7QA
+
+- For example, if you pay $10 for a <Teal>AAPL</Teal><Blue>20200314</Blue><Pink>P</Pink><Green>0070</Green>
+- Your profit needs to be at least $10 to cover the premium you paid
+- You only start making from a price difference >$10. In other words, your breakeven is $60 ($70 - $10)
+- As with all bets, the maximum amount that you're losing is the money you used to buy the contract, or the premium.
 
 ## Becoming the Bookie
 
